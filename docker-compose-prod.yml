@@ -14,8 +14,8 @@ services:
   redis:
     image: redis:6.0-rc3
     # TODO: persistence for redis. You need to persist /data directory.
-  volumes: 
-    - "redis-prod-data:/data"
-
+    volumes: 
+      - "redis-prod-data:/data"
+      
 volumes:
   redis-prod-data:
